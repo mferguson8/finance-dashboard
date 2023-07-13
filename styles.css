@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f1f1f1;
 }
 
 .container {
@@ -15,6 +16,10 @@ header {
   margin-bottom: 20px;
 }
 
+h1 {
+  color: #333;
+}
+
 .dashboard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,9 +27,11 @@ header {
 }
 
 .summary, .spending-habits, .budgeting, .financial-goals {
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 canvas {
@@ -34,6 +41,28 @@ canvas {
 
 button {
   margin-top: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
 #goals-list {
@@ -45,6 +74,46 @@ button {
   margin-bottom: 5px;
 }
 
-input[type="number"] {
-  width: 100px;
+/* Styling for the spending habits chart */
+.spending-habits h2 {
+  color: #333;
+}
+
+/* Styling for the financial goal section */
+.financial-goals p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.financial-goals input[type="number"],
+.financial-goals button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.financial-goals button {
+  margin-left: 10px;
+}
+
+/* Additional styles for colors */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.summary {
+  background-color: #FFC107;
+}
+
+.spending-habits {
+  background-color: #E91E63;
+}
+
+.budgeting {
+  background-color: #9C27B0;
+}
+
+.financial-goals {
+  background-color: #03A9F4;
 }
