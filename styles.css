@@ -117,3 +117,31 @@ header {
 .financial-goals {
   background-color: #03A9F4;
 }
+
+.add-purchase {
+  background-color: #F44336;
+}
+
+.add-purchase h2 {
+  color: #fff;
+}
+
+.add-purchase p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.add-purchase input[type="number"],
+.add-purchase button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.add-purchase button {
+  margin-left: 10px;
+  background-color: #FF5722;
+}
+
+.add-purchase button:hover {
+  background-color: #E64A19;
+}
