@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Personal Finance Dashboard</h1>
+    </header>
 
+    <div class="container">
+      <div class="dashboard">
+        <div class="summary">
+          <h2>Summary</h2>
+          <p>Total Income: <span id="total-income">$0.00</span></p>
+          <p>Total Expenses: <span id="total-expenses">$0.00</span></p>
+          <p>Net Income: <span id="net-income">$0.00</span></p>
+        </div>
+
+        <div class="spending-habits">
+          <h2>Spending Habits</h2>
+          <canvas id="spending-chart"></canvas>
+        </div>
+
+        <div class="budgeting">
+          <h2>Budgeting Tools</h2>
+          <p>Set your monthly budget:</p>
+          <input type="number" id="budget-input" />
+          <button id="update-budget">Update</button>
+          <p>Remaining budget: <span id="remaining-budget">$0.00</span></p>
+        </div>
+
+        <div class="financial-goals">
+          <h2>Financial Goals</h2>
+          <p>Set your financial goal:</p>
+          <input type="number" id="goal-input" />
+          <button id="add-goal">Add</button>
+          <ul id="goals-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
