@@ -14,11 +14,11 @@ body {
 header {
   text-align: center;
   margin-bottom: 20px;
-  color: #ccc;
 }
 
 h1 {
-  color: #333;
+  background-color: #333;
+  color :#ccc
 }
 
 .dashboard {
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #206f9c;
 }
 
 button:disabled {
@@ -94,6 +94,7 @@ input[type="number"] {
 
 .financial-goals button {
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 /* Additional styles for colors */
@@ -125,24 +126,27 @@ header {
 
 .add-purchase h2 {
   color: #fff;
+  margin: 20px;
 }
 
 .add-purchase p {
   color: #fff;
   margin-bottom: 10px;
+  margin: 20px;
 }
 
 .add-purchase input[type="number"],
 .add-purchase button {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 20px;
 }
 
 .add-purchase button {
-  margin-left: 10px;
-  background-color: #FF5722;
+  background-color: #45a049;
+  margin-bottom: 10px;
 }
 
 .add-purchase button:hover {
-  background-color: #E64A19;
+  background-color: #206f9c;
 }
